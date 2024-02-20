@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="products_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Products</title>
+    <style>
+        header {
+            font-size: 64px;}
+    </style>
+    <script>
+        var first_name = "Mai-Le Ghei";
+        var last_name = "Nguyen";
+        var hits = 0;
+        var spins = 0;
+        let hits_spins_ratio = hits/spins;
+    </script>
+</head>
+<body onload="hits_span.innerHTML = hits; spins_span.innerHTML = spins;">
+<header>
+    <script>
+        document.write("<b>" + first_name + "</b>" + " " +"<i>"+ last_name +"</i>" + "'S")
+    </script>
+</header>
+    <h1>
+        <script>
+            document.write("Used Smart Phone Store");
+        </script>
+        <p style="text-align: center; font-weight: bold;">
+            Hits:<span id="hits_span">0</span>
+            Spins:<span id="spins_span">0</span>
+            </p>
+            <p>
+                Win: <span id="win_span">Pending...</span>
+                Hit/Spin:<span id="hit_spin_span">0</span>
+            </p>
+    </h1>
+
+   <div><main>
+    <section class="item" 
+    onmouseover="
+
+    if(!this.className.includes ('rotate')) {
+        this.className='item rotate';
+        ++spins_span.innerHTML;
+    };
+
+    hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2);
+
+    if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;
+    "
+   onclick="
+if(this.className.includes('rotate')) {
+    this.className='item';
+    ++hits_span.innerHTML;
+};
+
+hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2); 
+
+if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;">
+        <h2>HTC</h2>
+        <p>price: &dollar;40.00</p>,
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg">
+    </section>,
+
+    <section class="item" 
+    onmouseover="
+
+    if(!this.className.includes ('rotate')) {
+        this.className='item rotate';
+        ++spins_span.innerHTML;
+    };
+
+    hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2);
+
+    if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;
+    "
+   onclick="
+if(this.className.includes('rotate')) {
+    this.className='item';
+    ++hits_span.innerHTML;
+};
+
+hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2); 
+
+if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;">
+        <h2>Apple</h2>
+        <p>price: &dollar;75.00</p>,
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/iphone-3gs.jpg">
+    </section>,
+    <section class="item" 
+    onmouseover="
+
+    if(!this.className.includes ('rotate')) {
+        this.className='item rotate';
+        ++spins_span.innerHTML;
+    };
+
+    hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2);
+
+    if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;
+    "
+   onclick="
+if(this.className.includes('rotate')) {
+    this.className='item';
+    ++hits_span.innerHTML;
+};
+
+hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2); 
+
+if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;">
+        <h2>Nokia</h2>
+        <p>price: &dollar;35.00</p>,
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Nokia.jpg">
+    </section>,
+    <section class="item" 
+    onmouseover="
+
+    if(!this.className.includes ('rotate')) {
+        this.className='item rotate';
+        ++spins_span.innerHTML;
+    };
+
+    hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2);
+
+    if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;
+    "
+   onclick="
+if(this.className.includes('rotate')) {
+    this.className='item';
+    ++hits_span.innerHTML;
+};
+
+hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2); 
+
+if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;">
+        <h2>Samsung</h2>
+        <p>price: &dollar;45.00</p>,
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Samsung.jpg">
+    </section>,
+    <section class="item" 
+    onmouseover="
+
+    if(!this.className.includes ('rotate')) {
+        this.className='item rotate';
+        ++spins_span.innerHTML;
+    };
+
+    hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2);
+
+    if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;
+    "
+   onclick="
+if(this.className.includes('rotate')) {
+    this.className='item';
+    ++hits_span.innerHTML;
+};
+
+hit_spin_span.innerHTML = (hits_span.innerHTML/spins_span.innerHTML).toFixed(2); 
+
+if (hit_spin_span.innerHTML > 0 ) {
+	progress = 'On your way!';
+	if (hit_spin_span.innerHTML >= 0.25 ) {
+    	progress = 'Almost there!';
+    	if (hit_spin_span.innerHTML >= 0.5 ) {
+            if( hits_span.innerHTML <= spins_span.innerHTML) { 
+        	    progress = 'You win!';
+            }
+    	}
+	}
+}
+else {
+	progress = 'Get going!' ;
+}
+
+win_span.innerHTML = progress;">
+        <h2>Blackberry</h2>
+        <p>price: &dollar;10.00</p>,
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Blackberry.jpg">
+    </section>
+</main></div> 
+<script>
+    console.log("Value of hits:", hits, "Data type:", typeof hits);
+    console.log("Value of spins:", spins, "Data type:", typeof spins);
+    
+</script>
+<footer>
+    <script>
+        var line = 1;
+        var now = new Date()
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        
+        document.write(`
+   <table border="1" style="margin-left: auto; margin-right: auto; text-align: center; color: darkblue;">
+    <tr><th colspan="2"><h1>Your One Stop For Used Phones - ${first_name[0]}.${last_name[0]}.'s</h1></th></tr>
+    <tr><td>${line++}.</td><td><br />Copyright @ ${first_name} ${last_name}</td></tr>
+    <tr><td>${line++}.</td><td>${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}</td></tr>
+    <tr><td>${line++}.</td><td>${((now.getHours() + 11) % 12 + 1)}:${(now.getMinutes() < 10 ? '0' : '') + now.getMinutes()} ${(now.getHours() < 12) ? 'AM' : 'PM'}</td></tr>
+</table>
+    `)
+    </script>
+</footer>    
+</body>
+</html>
